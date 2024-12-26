@@ -1,0 +1,169 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #007BFF;
+}
+
+/* Main Content */
+main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Problem Section */
+.problem {
+    margin-bottom: 20px;
+}
+
+.problem h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.problem p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Code Editor */
+.code-editor {
+    margin-bottom: 20px;
+}
+
+#code-editor {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    resize: none;
+}
+
+#run-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#run-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Output Section */
+.output {
+    margin-top: 20px;
+}
+
+.output h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+#output-box {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-y: scroll;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+

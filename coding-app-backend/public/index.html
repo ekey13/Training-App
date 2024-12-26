@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Practice App</title>
+
+    <!-- CodeMirror Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/codemirror.min.css">
+
+    <!-- Theme for CodeMirror -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/theme/dracula.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>42 Berlin Exam 04</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Level 1</h2>
+            <ul>
+                <li><a href="#" onclick="loadExercise('powerset')">Powerset Problem</a></li>
+                <li><a href="#" onclick="loadExercise('perm')">Permutation Generator</a></li>
+                <li><a href="#" onclick="loadExercise('tsp')">TSP</a></li>
+                <li><a href="#" onclick="loadExercise('nqueens')">N-Queens</a></li>
+                <li><a href="#" onclick="loadExercise('closed_parenthesis')">Closed Parenthesis</a></li>
+            </ul>
+
+            <h2>Level 2</h2>
+            <ul>
+                <li><a href="#">Ft_popen</a></li>
+                <li><a href="#">picoshell</a></li>
+                <li><a href="#">sandbox</a></li>
+            </ul>
+            <h2>Level 3</h2>
+            <ul>
+                <li><a href="#">VBC</a></li>
+                <li><a href="#">Still idk</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <section class="problem" id="problem-description">
+                <h2>Problem Title</h2>
+                <p>Problem description will appear here.</p>
+            </section>
+
+            <section class="code-editor">
+                <!-- CodeMirror Editor Container -->
+                <textarea id="code-editor" placeholder="Write your code here..."></textarea>
+                <button id="run-btn">Run Code</button>
+            </section>
+
+            <section class="output">
+                <h3>Output</h3>
+                <pre id="output-box">Output will appear here...</pre>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Coding Practice App</p>
+    </footer>
+
+    <!-- CodeMirror Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.1/mode/clike/clike.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
